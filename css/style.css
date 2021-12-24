@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../Nunito-Regular.ttf');
+}
+*{margin: 0;padding: 0;}
+body{
+  font-family: 'Nunito';
+}
+.w-48{width: 48%;}
+.w-4{width: 4%;}
+.resize-none{resize: none;}
+.x-mark{
+  right: calc(0.5rem + 10px);
+  top: 10px;
+}
+.x-mark i{color: rgb(153, 153, 153);padding: 0;margin: 0;}
+.symbols{
+  bottom: 10px;
+  left: calc(1rem + 10px);
+}
+.copypast{
+  bottom: 10px;
+  right: calc(1rem + 10px);
+}
+.noshd:focus{
+  box-shadow: none;
+}
+.form-select {
+  background-image: url();
+}
+.form-select:disabled{
+  background-color: #fff;
+}
+.sm1{display: none;}
