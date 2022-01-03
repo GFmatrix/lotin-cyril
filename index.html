@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/jquery.js"></script>
+  <script>
+    globalThis.ff = true;
+  </script>
+  <title>Lotin-Kiril</title>
+</head>
+<body style="background-color: #f5f5f5;">
+  <nav class="navbar navbar-expand-lg py-1 navbar-dark bg-primary">
+    <div class="container-fluid d-flex align-items-center">
+      <div class="navbar-brand d-flex align-items-center" href="#"><img src="img/logo2.png" class="me-2" width="35" alt=""><span class="fs-3">Lotin-Kiril</span></div>
+      </div>
+    </div>
+  </nav>
+  <script>
+    function lattocyrl() {
+      var transliterate2 = function(text) {
+      text = text
+          .replace(/Ya/g, "Я")
+          .replace(/YA/g, "Я")
+          .replace(/ya/g, "я")
+          .replace(/Yo/g, "Ё")
+          .replace(/yo/g, "ё")
+          .replace(/yu/g, "ю")
+          .replace(/Yu/g, "Ю")
+          .replace(/Ch/g, "Ч")
+          .replace(/TS/g, "Ц")
+          .replace(/ts/g, "ц")
+          .replace(/Sh/g, "Ш")
+          .replace(/sh/g, "ш")
+          .replace(/ch/g, "ч")
+          .replace(/O'/g, "Ў")
+          .replace(/o'/g, "ў")
+          .replace(/Q/g, "Қ")
+          .replace(/q/g, "қ")
+          .replace(/b/g, "б")
+          .replace(/G'/g, "Ғ")
+          .replace(/g'/g, "ғ")
+          .replace(/H/g, "Ҳ")
+          .replace(/h/g, "ҳ")
+          .replace(/Y/g, "Й") //  й
+          .replace(/U/g, "У")
+          .replace(/K/g, "К")
+          .replace(/E/g, "Е")
+          .replace(/N/g,  "Н")
+          .replace(/G/g, "Г")
+          // .replace(/Sh/g, "") //  Щ
+          .replace(/Z/g, "З")
+          .replace(/X/g, "Х")
+          .replace("'", "") //   ъ
+          .replace(/y/g, "й") //   й
+          .replace(/u/g, "у")
+          .replace(/k/g, "к")
+          .replace(/e/g, "е")
+          .replace(/n/g, "н")
+          .replace(/g/g, "г")
+          // .replace('sh', "")   Щ
+          .replace(/z/g, "з")
+          .replace(/x/g, "х")
+          .replace("'", "ъ")  //  ъ
+          .replace(/F/g, "Ф")
+          // .replace('I', "")   ы
+          .replace(/V/g, "В")
+          .replace(/a/g, "а")
+          .replace(/P/g, "П")
+          .replace(/R/g, "Р")
+          .replace(/O/g, "О")
+          .replace(/L/g, "Л")
+          .replace(/D/g, "Д")
+          .replace(/J/g, "Ж")
+          // .replace('E', "Э") //  Э
+          .replace(/f/g, "ф")
+          // .replace('i', "") //  ы
+          .replace(/v/g, "в")
+          .replace(/a/g, "а")
+          .replace(/p/g, "п")
+          .replace(/r/g, "р")
+          .replace(/o/g, "о")
+          .replace(/l/g, "л")
+          .replace(/d/g, "д")
+          .replace(/j/g, "ж")
+          .replace(/e/g, "е")
+          .replace(/S/g, "С")
+          .replace(/M/g, "М")
+          .replace(/I/g, "И")
+          .replace(/T/g, "Т")
+          // .replace("", "") //  Ь
+          .replace(/B/g, "Б")
+          .replace(/s/g, "с")
+          .replace(/m/g, "м")
+          .replace(/i/g, "и")
+          .replace(/t/g, "т")
+          // .replace("", "") //  ь
+          .replace(/W/g, "В")
+          .replace(/w/g, "в")
+      return text;
+      };
+      var llll = transliterate2($('#wr').val())
+      $('#ou').val(llll);
+    };
+    function go() {
+      var transliterate = function(text) {
+      text = text.replace(/\u0401/g,"Yo").replace(/\u0419/g,"Y").replace(/\u0426/g,"TS").replace(/\u0423/g,"U").replace(/\u041A/g,"K").replace(/\u0415/g,"E").replace(/\u041D/g,"N").replace(/\u0413/g,"G").replace(/\u0428/g,"Sh").replace(/\u0429/g,"Sh").replace(/\u0417/g,"Z").replace(/\u0425/g,"X").replace(/\u042A/g,"").replace(/\u0451/g,"yo").replace(/\u0439/g,"y").replace(/\u0446/g,"ts").replace(/\u0443/g,"u").replace(/\u043A/g,"k").replace(/\u0435/g,"e").replace(/\u043D/g,"n").replace(/\u0433/g,"g").replace(/\u0448/g,"sh").replace(/\u0449/g,"sh").replace(/\u0437/g,"z").replace(/\u0445/g,"x").replace(/\u044A/g,"'").replace(/\u0424/g,"F").replace(/\u042B/g,"I").replace(/\u0412/g,"V").replace(/\u0410/g,"a").replace(/\u041F/g,"P").replace(/\u0420/g,"R").replace(/\u041E/g,"O").replace(/\u041B/g,"L").replace(/\u0414/g,"D").replace(/\u0416/g,"J").replace(/\u042D/g,"E").replace(/\u0444/g,"f").replace(/\u044B/g,"i").replace(/\u0432/g,"v").replace(/\u0430/g,"a").replace(/\u043F/g,"p").replace(/\u0440/g,"r").replace(/\u043E/g,"o").replace(/\u043B/g,"l").replace(/\u0434/g,"d").replace(/\u0436/g,"j").replace(/\u044D/g,"e").replace(/\u042F/g,"Ya").replace(/\u0427/g,"Ch").replace(/\u0421/g,"S").replace(/\u041C/g,"M").replace(/\u0418/g,"I").replace(/\u0422/g,"T").replace(/\u042C/g,"").replace(/\u0411/g,"B").replace(/\u042E/g,"Yu").replace(/\u044F/g,"ya").replace(/\u0447/g,"ch").replace(/\u0441/g,"s").replace(/\u043C/g,"m").replace(/\u0438/g,"i").replace(/\u0442/g,"t").replace(/\u044C/g,"").replace(/\u040E/g,"O'").replace(/\u045E/g,"o'").replace(/\u049A/g,"Q").replace(/\u049B/g,"q").replace(/\u0431/g,"b").replace(/\u0492/g,"G'").replace(/\u0493/g,"g'").replace(/\u04B2/g,"H").replace(/\u04B3/g,"h").replace(/\u044E/g,"yu");
+      return text;
+      };
+      $('#ou').val(transliterate($('#wr').val()));
+    };
+  </script>
+  <script>
+    function goes(){
+      if(globalThis.ff){
+        go();
+      }else{
+        lattocyrl();
+      }
+    }
+  </script>
+  <div class="container">
+    <div class="row my-3 mt-5">
+      <div class="col-5">
+        <select class="form-select" aria-label="Default select example" id="sel1">
+          <option value="kiril">Kiril</option>
+          <option value="lotin">Lotin</option>
+        </select>
+      </div>
+      <script>
+
+      </script>
+      <div class="col-2 px-0">
+        <script>
+          function onorno(){
+            if(globalThis.ff){
+              $('#sel1 option[value=lotin]').attr('selected','selected');
+              $('#sel2 option[value=kiril]').attr('selected','selected');
+              globalThis.ff = false;
+              $('.sm2').css('display','none');
+              $('.sm1').css('display','block');
+              goes();
+            }else{
+              $('#sel2 option[value=kiril]').removeAttr('selected');
+              $('#sel2 option[value=lotin]').attr('selected','selected');
+              $('#sel1 option[value=lotin]').removeAttr('selected');
+              $('#sel1 option[value=kiril]').attr('selected','selected');
+              globalThis.ff = true;
+              $('.sm1').css('display','none');
+              $('.sm2').css('display','block');
+              goes();
+            }
+          }
+        </script>
+        <button class="btn btn-outline-primary m-0 w-100" onclick="onorno()">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </button>
+      </div>
+      <div class="col-5">
+        <select class="form-select" aria-label="Default select example" id="sel2" disabled>
+          <option value="lotin">Lotin</option>
+          <option value="kiril">Kiril</option>
+        </select>
+      </div>
+    </div>
+    <script>
+      globalThis.resword;
+      function clear2(){
+        globalThis.resword = $('#wr').val();
+        $('#wr').val("");
+        $('#ou').val("");
+      }
+      function reset2(){
+        $('#wr').val(globalThis.resword);
+        goes();
+      }
+    </script>
+    <div class="row">
+      <div class="col-lg-6 mt-lg-3 col-12 position-relative">
+        <div class="position-absolute x-mark d-flex flex-column">
+          <button class="btn shadow-none" onclick="clear2()"><i class="fa-solid fa-xmark"></i></button>
+          <button class="btn shadow-none" onclick="reset2()"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        </div>
+
+        <div class="position-absolute symbols sm1 bg-white">
+          <script>
+            function putstow2(a){
+              $('#wr').val($('#wr').val()+a);
+            }
+          </script>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow2('Э')">Э</button>
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow2('э')">э</button>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow2('Ы')">Ы</button>
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow2('ы')">ы</button>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow2('Ь')">Ь</button>
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow2('ь')">ь</button>
+            </div>
+        </div>
+
+        <div class="position-absolute symbols sm2 bg-white">
+          <script>
+            function putstow(a){
+              $('#wr').val($('#wr').val()+a);
+              goes();
+            }
+          </script>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('Ў')">Ў</button>
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('ў')">ў</button>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('Қ')">Қ</button>
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('қ')">қ</button>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('Ғ')">Ғ</button>
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('ғ')">ғ</button>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('Ҳ')">Ҳ</button>
+              <button class="btn btn-sm btn-outline-secondary noshd" onclick="putstow('ҳ')">ҳ</button>
+            </div>
+        </div>
+        <script>
+          function copyToClipboard2() {
+            var copyText = document.getElementById("wr");
+            copyText.select();
+            copyText.setSelectionRange(0, 999999999);
+            navigator.clipboard.writeText(copyText.value);
+          }
+        </script>
+        <button class="position-absolute btn btn-sm btn-outline-secondary copypast" onclick="copyToClipboard2()">
+          <i class="fa-solid fa-paste"></i>
+        </button>
+        <textarea class="form-control resize-none pe-5 pt-2 pb-5" id="wr" rows="15" oninput="goes()"></textarea>
+      </div>
+      <div class="col-lg-6 mt-lg-3 mt-3 col-12 position-relative">
+        <div class="position-absolute copypast bg-white">
+          <script>
+            function copyToClipboard() {
+              var copyText = document.getElementById("ou");
+              copyText.select();
+              copyText.setSelectionRange(0, 999999999);
+              navigator.clipboard.writeText(copyText.value);
+            }
+          </script>
+          <button class="btn btn-sm btn-outline-secondary" onclick="copyToClipboard()">
+            <i class="fa-solid fa-paste"></i>
+          </button>
+        </div>
+        <textarea class="form-control resize-none pe-5 pt-2 pb-5 bg-white" id="ou" rows="15" disabled></textarea>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
